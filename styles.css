@@ -30,7 +30,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #6B2A7E;
+  background-color: #F0F8FF;
   font-family: sans-serif;
   display: flex;
   justify-content: center; /* horizontally center */
@@ -46,7 +46,7 @@ body {
   border-radius: 5px;
 }
 
-/* h1 */
+/* h1 (for heading) */
 h1 {
   font-size: 1.1rem;
   color: #888;
@@ -63,5 +63,5 @@ h1 {
 
 /* .new-joke-btn */
 .new-joke-btn {
-  background-color: #000000;
+  background-color: #555555;
 }
