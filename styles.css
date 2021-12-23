@@ -18,7 +18,7 @@ a {
   outline: none;
   border: none;
   color: #fff;
-  background-color: #F0F8FF ; /* default color */
+  background-color: #f0f8ff ; /* default color */
 }
 
 .btn:hover {
@@ -30,7 +30,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   font-family: sans-serif;
   display: flex;
   justify-content: center; /* horizontally center */
