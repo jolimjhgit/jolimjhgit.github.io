@@ -7,7 +7,7 @@ const newJokeBtn = document.querySelector('.new-joke-btn');
 const hint = "D0n't WeR33W0olV-_wES #@VE N1CEe TeEE-.TH````?----";
 
 // add 'click' eventListener to .new-joke-btn
-newJokeBtn.addEventListener('click', rollDice);
+newJokeBtn.addEventListener('click', getJoke);
 
 // call rollDice()
 rollDice();
@@ -15,9 +15,9 @@ rollDice();
 //rollDice() function definition
 function rollDice() {
   // get a random number between 0 inclusive and 1 exclusive
-  const d = Math.random();
+  d = Math.random();
   if (d < 0.5) {
-    jokeText.innerText = console.log(Math.random()); 
+    jokeText.innerText = console.log(d); 
   }
   else {
     getjoke();
@@ -26,6 +26,12 @@ function rollDice() {
 
 // getJoke() function definition
 function getJoke() {
+
+  if (d < 0.5) {
+    jokeText.innerText = console.log(Math.random()); 
+  }
+  else {
+    getjoke();
   // make an API request to https://icanhazdadjoke.com/'
   fetch('https://icanhazdadjoke.com/', {
     headers: {
