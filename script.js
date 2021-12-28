@@ -26,7 +26,7 @@ function getJoke() {
     const joke = data.joke;
     // do the replacement
     const d = Math.random();
-    if (d < 0.5) {
+    if (d < 0.2) {
       jokeText.innerText = d; 
     }
     else {
