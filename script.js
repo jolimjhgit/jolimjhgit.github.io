@@ -3,12 +3,26 @@
 const jokeText = document.querySelector('.joke-text');
 // .new-joke-btn 
 const newJokeBtn = document.querySelector('.new-joke-btn');
+// hint variable
+const hint = "D0n't WeR33W0olV-_wES #@VE N1CEe TeEE-.TH````?----";
 
 // add 'click' eventListener to .new-joke-btn
-newJokeBtn.addEventListener('click', getJoke);
+newJokeBtn.addEventListener('click', rollDice);
 
-// immediately call getJoke()
-getJoke();
+// call rollDice()
+rollDice();
+
+//rollDice() function definition
+function rollDice() {
+  // get a random number between 0 inclusive and 1 exclusive
+  var d = Math.random();
+  if (d < 0.5) {
+    jokeText.innerText = hint; 
+  }
+  else {
+    getjoke();
+  }
+}
 
 // getJoke() function definition
 function getJoke() {
