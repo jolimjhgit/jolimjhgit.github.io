@@ -29,13 +29,14 @@ function getJoke() {
     // extract the joke text
     const joke = data.joke;
     // do the replacement
+/*
     if (d < 0.4) {
       jokeText.innerText = d; 
-      d = Math.random();
     }
     else {
+*/
       jokeText.innerText = joke;
-      d = Math.random();
-    }
-  });
+/*    }
+    d = Math.random();
+*/  });
 }   
