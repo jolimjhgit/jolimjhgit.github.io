@@ -12,6 +12,7 @@ var d = Math.random();
 // add 'click' eventListener to .new-joke-btn
 newJokeBtn.addEventListener('click', getJoke());
 
+getJoke();
 
 // getJoke() function definition
 function getJoke() {
