@@ -29,7 +29,7 @@ function getJoke() {
     // extract the joke text
     const joke = data.joke;
     // do the replacement
-    if (d < 0.7) {
+    if (d < 0.4) {
       jokeText.innerText = d; 
       d = Math.random();
     }
