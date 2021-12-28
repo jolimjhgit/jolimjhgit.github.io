@@ -26,6 +26,7 @@ function getJoke() {
     /* replace innerText of .joke-text with data.joke */
     // extract the joke text
     const joke = data.joke;
+    const d = Math.random();
     // do the replacement
     if (d < 0.4) {
       jokeText.innerText = d; 
@@ -33,6 +34,5 @@ function getJoke() {
     else {
       jokeText.innerText = joke;
     }
-    var d = Math.random();
   });
 }   
