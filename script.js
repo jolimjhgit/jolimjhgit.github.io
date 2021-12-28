@@ -9,18 +9,9 @@ const hint = "D0n't WeR33W0olV-_wES #@VE N1CEe TeEE-.TH````?----";
 // add 'click' eventListener to .new-joke-btn
 newJokeBtn.addEventListener('click', getJoke());
 
-// call rollDice()
-getJoke();
-
 
 // getJoke() function definition
 function getJoke() {
-  var d = Math.random();
-  if (d < 0.5) {
-    jokeText.innerText = d; 
-    return;
-  }
-  else {
   // make an API request to https://icanhazdadjoke.com/'
   fetch('https://icanhazdadjoke.com/', {
     headers: {
@@ -34,8 +25,12 @@ function getJoke() {
     // extract the joke text
     const joke = data.joke;
     // do the replacement
-    jokeText.innerText = joke;
+    const d = Math.random();
+    if (d < 0.5) {
+      jokeText.innerText = d; 
+    }
+    else {
+      jokeText.innerText = joke;
+    }
   });
-  return;
-  }
 }
