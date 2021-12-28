@@ -15,9 +15,10 @@ getJoke();
 
 // getJoke() function definition
 function getJoke() {
-  d = Math.random();
+  var d = Math.random();
   if (d < 0.5) {
     jokeText.innerText = d; 
+    return();
   }
   else {
   // make an API request to https://icanhazdadjoke.com/'
@@ -35,5 +36,6 @@ function getJoke() {
     // do the replacement
     jokeText.innerText = joke;
   });
+  return();
   }
 }
