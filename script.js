@@ -17,7 +17,7 @@ function rollDice() {
   // get a random number between 0 inclusive and 1 exclusive
   d = Math.random();
   if (d < 0.5) {
-    jokeText.innerText = console.log(d); 
+    jokeText.innerText = d; 
   }
   else {
     getjoke();
