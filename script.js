@@ -15,14 +15,11 @@ rollDice();
 //rollDice() function definition
 function rollDice() {
   // get a random number between 0 inclusive and 1 exclusive
-  return Math.random();
   const d = Math.random();
   if (d < 0.5) {
-    return Math.random();
-    jokeText.innerText = hint; 
+    jokeText.innerText = console.log(Math.random()); 
   }
   else {
-    return Math.random();
     getjoke();
   }
 }
