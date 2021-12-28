@@ -38,5 +38,5 @@ function getJoke() {
       jokeText.innerText = joke;
 /*    }
     d = Math.random();
-*/  });
+ */ });
 }   
