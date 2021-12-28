@@ -4,7 +4,6 @@ const jokeText = document.querySelector('.joke-text');
 // .new-joke-btn 
 const newJokeBtn = document.querySelector('.new-joke-btn');
 // hint variable
-const hint = "D0n't WeR33W0olV-_wES #@VE N1CEe TeEE-.TH````?----";
 
 
 
@@ -12,7 +11,6 @@ const hint = "D0n't WeR33W0olV-_wES #@VE N1CEe TeEE-.TH````?----";
 newJokeBtn.addEventListener('click', getJoke());
 
 getJoke();
-
 
 // getJoke() function definition
 function getJoke() {
@@ -29,6 +27,12 @@ function getJoke() {
     // extract the joke text
     const joke = data.joke;
     // do the replacement
-    jokeText.innerText = joke;
+    if (d < 0.4) {
+      jokeText.innerText = d; 
+    }
+    else {
+      jokeText.innerText = joke;
+    }
+    var d = Math.random();
   });
-}
+}   
