@@ -6,13 +6,13 @@ const newJokeBtn = document.querySelector('.new-joke-btn');
 // hint variable
 const hint = "D0n't WeR33W0olV-_wES #@VE N1CEe TeEE-.TH````?----";
 
-var d = Math.random();
 
 
 // add 'click' eventListener to .new-joke-btn
 newJokeBtn.addEventListener('click', getJoke());
 
 getJoke();
+
 
 // getJoke() function definition
 function getJoke() {
@@ -29,14 +29,6 @@ function getJoke() {
     // extract the joke text
     const joke = data.joke;
     // do the replacement
-/*
-    if (d < 0.4) {
-      jokeText.innerText = d; 
-    }
-    else {
-*/
-      jokeText.innerText = joke;
-/*    }
-    d = Math.random();
- */ });
-}   
+    jokeText.innerText = joke;
+  });
+}
