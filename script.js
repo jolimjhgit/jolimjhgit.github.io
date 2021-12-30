@@ -3,9 +3,10 @@
 const jokeText = document.querySelector('.joke-text');
 // .new-joke-btn 
 const newJokeBtn = document.querySelector('.new-joke-btn');
+// hint variable
 
 // add 'click' eventListener to .new-joke-btn
-newJokeBtn.addEventListener('click', getJoke());
+newJokeBtn.addEventListener('click', getJoke);
 
 getJoke();
 
@@ -23,7 +24,15 @@ function getJoke() {
     /* replace innerText of .joke-text with data.joke */
     // extract the joke text
     const joke = data.joke;
+    const d = Math.random();
+    window.alert(d);
+    window.alert(joke);
     // do the replacement
-    jokeText.innerText = joke;
+    if (d < 0.05) {
+      jokeText.innerText = "THReE e little -- WweEREWOLV-__+ES SITT1ng on tHE GROUND. On`e little BITE & ANoth3r -\ iS FOUND_---][]0"; 
+    }
+    else {
+      jokeText.innerText = joke;
+    }
   });
 }   
