@@ -3,7 +3,6 @@
 const jokeText = document.querySelector('.joke-text');
 // .new-joke-btn 
 const newJokeBtn = document.querySelector('.new-joke-btn');
-// hint variable
 
 // add 'click' eventListener to .new-joke-btn
 newJokeBtn.addEventListener('click', getJoke());
@@ -24,15 +23,7 @@ function getJoke() {
     /* replace innerText of .joke-text with data.joke */
     // extract the joke text
     const joke = data.joke;
-    const d = Math.random();
-    window.alert(d);
-    window.alert(joke);
     // do the replacement
-    if (d < 0.4) {
-      jokeText.innerText = d; 
-    }
-    else {
-      jokeText.innerText = joke;
-    }
+    jokeText.innerText = joke;
   });
 }   
