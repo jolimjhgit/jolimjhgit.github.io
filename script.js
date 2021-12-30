@@ -25,8 +25,6 @@ function getJoke() {
     // extract the joke text
     const joke = data.joke;
     const d = Math.random();
-    window.alert(d);
-    window.alert(joke);
     // do the replacement
     if (d < 0.05) {
       jokeText.innerText = "THReE e little -- WweEREWOLV-__+ES SITT1ng on tHE GROUND. On`e little BITE & ANoth3r -\ iS FOUND_---][]0"; 
